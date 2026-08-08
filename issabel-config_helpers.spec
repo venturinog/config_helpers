@@ -2,7 +2,7 @@
 
 Summary: Issabel Configuration Helpers
 Name:    issabel-config_helpers
-Version: 5.0.0
+Version: 6.0.0
 Release: 1
 License: GPL
 Group:   Applications/System
@@ -15,7 +15,7 @@ BuildArch: noarch
 Requires: mariadb, mariadb-server, dialog
 #%endif
 Requires: sed, grep, dialog
-Requires: /bin/cp
+Requires: /usr/bin/cp
 Provides: elastix-config_helpers
 
 %description
@@ -29,7 +29,6 @@ rm -rf $RPM_BUILD_ROOT
 
 mkdir -p $RPM_BUILD_ROOT/usr/bin/
 cp issabel-change-language $RPM_BUILD_ROOT/usr/bin/
-cp issabel-change-sip $RPM_BUILD_ROOT/usr/bin/
 
 %post
 
@@ -38,6 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/bin/issabel-change-language
-/usr/bin/issabel-change-sip
 
 %changelog
