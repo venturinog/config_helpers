@@ -15,7 +15,7 @@ BuildArch: noarch
 Requires: mariadb, mariadb-server, dialog
 #%endif
 Requires: sed, grep, dialog
-Requires: /bin/cp
+Requires: /usr/bin/cp
 Provides: elastix-config_helpers
 
 %description
