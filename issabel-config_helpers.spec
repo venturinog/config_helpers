@@ -2,7 +2,7 @@
 
 Summary: Issabel Configuration Helpers
 Name:    issabel-config_helpers
-Version: 5.0.0
+Version: 6.0.0
 Release: 1
 License: GPL
 Group:   Applications/System
